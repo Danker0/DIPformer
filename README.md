@@ -36,14 +36,14 @@ pip install -r requirements.txt
 
     **c. Unstratified NCA, NCM, NCA+NCM Battery Data**: `NCA(Unstratified)`, `NCM(Unstratified)`, `NCA+NCM(Unstratified)` are the unstratified relaxed voltage data of NiCoAi, NiCoMn, and NiCoAi+NiCoMn batteries.
 
-4. Run `run.py` and set the parameters:
+3. Run `run.py` and set the parameters:
    
 ```
 --task_name long_term_forecast --is_training 1 --model_id test --model DIPformer --data Raw_RV_Data
 ```
 
 
-5. The results will be saved in the `results` folder, and the weight files will be saved in the `checkpoints` folder. If you need to test SOH estimation with relaxed voltage, place the test set in the ./data/ folder and set `--is_training 0`.
+4. The results will be saved in the `results` folder, and the weight files will be saved in the `checkpoints` folder. If you need to test SOH estimation with relaxed voltage, place the test set in the ./data/ folder and set `--is_training 0`.
 
 
 ## Citation
