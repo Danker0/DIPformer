@@ -2,15 +2,15 @@ DIPformer: A Deep Invert Patching Transformer for Battery State of Health Estima
 
 ## DIPformer介绍
 
-DIPformer是我们提出的一个基于Transformer的SOH估计模型，它专门适用于使用松弛电压估计电池SOH的场景。
+**DIPformer**是我们提出的一个基于Transformer的SOH估计模型，它专门适用于使用松弛电压估计电池SOH的场景。在实际应用中，DIPformer允许直接提取并输入原始的松弛电压，同时能够抓住松弛电压之间的相关信息，即多变量相关性。实现了SOH估计任务的高效性和准确性。
 
-1. DIPformer允许直接使用**原始的松弛电压**进行电池SOH的估计，得益于我们所提出的反向补丁嵌入(Inverted Patch Embedding)。在保留了原始电压松弛曲线空间形状信息的前提下，无缝提取细粒度特征。避免了以往复杂的特征选取工程。我们的方法可以直接利用了电压松弛数据中的丰富信息，从而获得更准确的SOH估计。
+1. DIPformer允许直接使用**原始的松弛电压**进行电池SOH的估计，得益于我们所提出的反向补丁嵌入(Inverted Patch Embedding)。直接使用原始的松弛电压可以确保在保留原始电压松弛曲线空间形状信息的前提下，无缝提取细粒度特征。避免了以往复杂的特征选取工程。我们的方法可以直接利用松弛电压数据中的丰富信息，从而获得更准确的SOH估计。
 
-<img width="2501" alt="FIG1111" src="https://github.com/Danker0/DIPformer/assets/116075674/8ca4be90-012f-4115-987e-4c43e940da3e">
+   <img width="2501" alt="FIG1111" src="https://github.com/Danker0/DIPformer/assets/116075674/8ca4be90-012f-4115-987e-4c43e940da3e">
 
-2. 我们提出的DIPformer，其中**向补丁嵌入(Inverted Patch Embedding)**着特征维度执行贴片(Patch)操作，将每个贴片(Patch)视为表示松弛电压之间关系的标记(Token)。随后，结合了多元关注(Multivariate Attention)来捕捉弛豫电压之间的复杂依赖关系。然后利用层归一化(LayerNorm)和前馈网络(Feed-Forward Network)中将局部特征与原始松弛电压的全局退化趋势相结合，增强了鲁棒性和准确性。
+2. 我们提出的DIPformer，其中**反向补丁嵌入**(**Inverted Patch Embedding**)沿着特征维度执行贴片(Patch)操作，将每个贴片(Patch)视为表示松弛电压之间关系的标记(Token)。随后，结合了多元关注(Multivariate Attention)来捕捉弛豫电压之间的复杂依赖关系。然后利用层归一化(LayerNorm)和前馈网络(Feed-Forward Network)中将局部特征与原始松弛电压的全局退化趋势相结合，增强了鲁棒性和准确性。
 
-<img width="1253" alt="PicPatchiii" src="https://github.com/Danker0/DIPformer/assets/116075674/ebe4aa5c-dfe4-4318-ba75-22bee80b9699">
+   <img width="1253" alt="PicPatchiii" src="https://github.com/Danker0/DIPformer/assets/116075674/ebe4aa5c-dfe4-4318-ba75-22bee80b9699">
 
 
 ## 如何去运行代码
