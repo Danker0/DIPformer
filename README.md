@@ -52,7 +52,7 @@ If you find our work helpful, we will post the specific citation information **h
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at: **Email**: `1540214738@qq.com`; **WeChat**: `WYYD2020`; **Phone**: `+86 13761019604`
+If you have any questions or suggestions, feel free to contact me at: **Email**: `1540214738@qq.com`; **WeChat**: `WYYD2020`
 
 ## Acknowledgments
 
