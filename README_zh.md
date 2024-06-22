@@ -50,8 +50,7 @@
 
 ## 联系
 
-   有任何问题或者建议随时都可以联系我，联系方式： **邮箱**：`1540214738@qq.com`； **微信**：`WYYD2020`;  **手机**：`+86 13761019604`
-
+   有任何问题或者建议随时都可以联系我，联系方式： **邮箱**：`1540214738@qq.com`； **微信**：`WYYD2020`
 ## 致谢
 
    This work was funded by the National Natural Science Foundation of China (NSFC, No. 61702320)
