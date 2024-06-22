@@ -2,14 +2,13 @@
 
 ## Introduction to DIPformer
 
-**DIPformer** is our proposed Transformer-based SOH (State of Health) estimation model, specifically designed for scenarios that use relaxed voltage to estimate battery SOH. In practical applications, DIPformer allows for the direct extraction and input of raw relaxed voltage, while capturing the correlations between these voltages, i.e., multivariate correlations. This achieves high efficiency and accuracy in SOH estimation tasks.
+**DIPformer** is our proposed Transformer-based SOH (State of Health) estimation model, specifically designed for scenarios that use voltage relaxation to estimate battery SOH. In practical applications, DIPformer allows for the direct extraction and input of raw voltage relaxation, while capturing the correlations between these voltages, i.e., multivariate correlations. This achieves high efficiency and accuracy in SOH estimation tasks.
 
-1. DIPformer allows for the direct use of **raw relaxed voltage** for battery SOH estimation, thanks to our proposed Inverted Patch Embedding. Directly using raw relaxed voltage ensures the retention of the spatial shape information of the original voltage relaxation curve, seamlessly extracting fine-grained features. This avoids the complex feature selection engineering of the past. Our method can directly utilize the rich information in relaxed voltage data, resulting in more accurate SOH estimation.
+1. DIPformer allows for the direct use of **raw voltage relaxation data** for battery SOH estimation, thanks to our proposed Inverted Patch Embedding. Directly using raw voltage relaxation ensures the retention of the spatial shape information of the original voltage relaxation curve, seamlessly extracting fine-grained features. This avoids the complex feature selection engineering of the past. Our method can directly utilize the rich information in voltage relaxation data, resulting in more accurate SOH estimation.
 
    <img width="2501" alt="FIG1111" src="https://github.com/Danker0/DIPformer/assets/116075674/8ca4be90-012f-4115-987e-4c43e940da3e">
 
-2. In our proposed DIPformer, **Inverted Patch Embedding** performs patch operations along the feature dimension, treating each patch as a token representing the relationship between relaxed voltages. This is combined with Multivariate Attention to capture the complex dependencies between the relaxed voltages. Layer Normalization and Feed-Forward Network are then utilized to combine local features with the global degradation trend of the original relaxed voltage, enhancing robustness and accuracy.
-
+2. In our proposed DIPformer, **Inverted Patch Embedding** performs patch operations along the feature dimension, treating each patch as a token representing the relationship between voltage relaxation. Subsequently, our model combines patch-wise multivariate attention to capture the complex dependencies among the relaxation voltages. Then LayerNorm and Feed-forward network are applied to enhance the robustness and accuracy by integrating local features with global degradation trends on raw relaxation voltages.
    <img width="1253" alt="PicPatchiii" src="https://github.com/Danker0/DIPformer/assets/116075674/ebe4aa5c-dfe4-4318-ba75-22bee80b9699">
 
 
@@ -20,9 +19,9 @@
 pip install -r requirements.txt
 ```
 
-2. Select the relaxation voltage dataset to train. The original cycle data can be found [Here](https://zenodo.org/records/6405084). We have placed the processed datasets in the ./data/ folder, including:
+2. Select the relaxation voltage dataset to train and test. The original cycle data can be found [Here](https://zenodo.org/records/6405084). We have placed the processed datasets in the ./data/ folder, including:
 
-    **a. Raw Relaxed Voltage Data**: `Raw_RV_Data.csv` is the directly extracted relaxed voltage data, retaining fine-grained features, and is the dataset used in our paper.
+    **a. Raw Relaxed Voltage Data**: `Raw_RV_Data.csv` is the directly extracted voltage relaxation data, retaining fine-grained features, and is the dataset used in our paper.
 
     ![image](https://github.com/Danker0/DIPformer/assets/116075674/24749621-bde7-41fb-8d9a-1d2d353c4206)
 
