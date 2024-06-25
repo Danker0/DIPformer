@@ -61,5 +61,5 @@ This work was funded by the National Natural Science Foundation of China (NSFC, 
 This repository is constructed based on the following:
 
 1. Time Series Library: [Time series library](https://github.com/thuml/Time-Series-Library)
-2. Voltage Relaxation Data: [Data source](https://doi.org/10.5281/zenodo.6405084.)
+2. Voltage Relaxation Data: [Data source](https://doi.org/10.5281/zenodo.6405084)
 3. Extraction Code: [Extraction Code](https://github.com/Yixiu-Wang/data-driven-capacity-estimation-from-voltage-relaxation)
