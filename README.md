@@ -56,8 +56,6 @@ If you have any questions or suggestions, feel free to contact me at: **Email**:
 
 ## Acknowledgments
 
-This work was funded by the National Natural Science Foundation of China (NSFC, No. 61702320).
-
 This repository is constructed based on the following:
 
 1. Time Series Library: [Time series library](https://github.com/thuml/Time-Series-Library)
