@@ -53,8 +53,6 @@
    有任何问题或者建议随时都可以联系我，联系方式： **邮箱**：`1540214738@qq.com`； **微信**：`WYYD2020`
 ## 致谢
 
-   This work was funded by the National Natural Science Foundation of China (NSFC, No. 61702320)
-
    This repo is constructed based on following:
    
    1. Time Series Library : [Time series library](https://github.com/thuml/Time-Series-Library)
